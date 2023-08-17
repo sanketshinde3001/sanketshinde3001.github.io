@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: sans-serif; */
+
+}
+
+html , body {
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#card{
+    /* position: relative; */
+    height: 40vmax;
+    width: 30vmax;
+    background-color: black;
+    border-radius: 40px;
+    background-image: linear-gradient(to bottom right ,rgba(246, 239, 36, 0.873) ,  rgb(223, 59, 59) , rgb(158, 6, 158));
+    border: 3px solid black;
+
+}
+#ip{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vmax;
+    margin-top: 4vmax;
+    /* background-color: antiquewhite; */
+    
+}
+#city{
+    border-color: transparent;
+    height: 3vmax;
+    width: 20vmax;
+    border-radius: 30px;
+    font-size: 1.6vmax;
+    padding-left: 1.3vw;
+}
+#search{
+    height: 3vmax;
+    width: 3vmax;
+    border-radius: 30px;
+    border:none;
+    background-color: rgb(255, 255, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 2vmax;
+    
+      
+}
+#simg{
+    height: 2vmax;
+    width: 2vmax;
+}
+
+#wimg{
+    /* background-color: aqua; */
+    margin-top: 3vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#wimg1{
+    height: 9vmax;
+    /* background-color: #fff; */
+}
+#wtemp{
+    /* background-color: aqua; */
+    margin-top: 1.5vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#wtemp1{
+    font-size: 4.5vmax;
+}
+#wcity{
+    /* background-color: aqua; */
+    margin-top: 1vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+
+}
+#wcity1{
+    font-size: 2vmax;
+    padding-left: 1vw;
+    text-transform: uppercase;
+}
+
+
+h1 {
+    max-width: 100%;         
+    overflow: hidden;      
+    white-space: nowrap;     
+    text-overflow: ellipsis; 
+}
+
+#bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 4vmax ; */
+    gap: 7vw;
+    margin-top: 1.5vmax;
+    /* background-color: #fff; */
+    height: 9vmax;
+    width: 100%;
+    /* flex-wrap: wrap; */
+}
+#bot1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 4vmax ; */
+    gap: 1vw;
+    /* padding-left: 2vw; */
+    height: 9vw;
+    /* background-color: aliceblue; */
+}
+#bot2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 4vmax ; */
+    gap: 1vw;
+    padding-right: 2vw;
+    height: 9vw;
+}
+#humadity{
+    height: 3vmax;
+    padding-left: 1.5vmax;
+
+}
+#wind{
+    height: 3vmax;
+
+}
+#hper{
+    font-size: 1.5vmax;
+    font-weight: 700;
+}
+#hname{
+    font-size: 1vmax;
+    font-weight: 700;
+}
+#wper{
+    font-size: 1.5vmax;
+    font-weight: 700;
+}
+#wname{
+    font-size: 1vmax;
+    font-weight: 700;
+}
+
+@media (max-width: 800px){
+    #card {
+    height : 55vmax;
+    width : 35vmax;
+    border-radius: 20px;
+    }
+    #ip{
+        gap: 2.5vmax;
+        margin-top: 6vmax;
+    }
+    #city{
+        height: 4vmax;
+        width: 22vmax;
+        border-color: transparent;
+        font-size: 2vmax;
+    }
+    #search{
+        height: 4vmax;
+        width: 4vmax;
+    }
+    #wimg1{
+        height: 10vmax;
+    }
+    #wimg{
+        margin-top: 4vmax;
+        /* background-color: antiquewhite; */
+    }
+    #wtemp1{
+        font-size: 5vmax;
+    }
+    #wtemp{
+        margin-top: 4vmax;
+        /* background-color: antiquewhite; */
+    }
+    #wcity1{
+        font-size: 2.7vmax;
+        padding-left: 3vw;
+        
+    }
+    #bottom{
+        margin-top: 4vmax;
+    }
+    #humadity{
+        height: 5vmax;
+        padding-left: 1.5vmax;
+    
+    }
+    #wind{
+        height: 5vmax;
+    
+    }
+    #hper{
+        font-size: 2vmax;
+        font-weight: 700;
+    }
+    #hname{
+        font-size: 1.5vmax;
+        font-weight: 700;
+    }
+    #wper{
+        font-size: 2vmax;
+        font-weight: 700;
+    }
+    #wname{
+        font-size: 1.5vmax;
+        font-weight: 700;
+    }
+    
+
+    
+
+
+}
