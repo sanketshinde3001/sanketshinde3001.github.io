@@ -58,7 +58,7 @@ submitButton.addEventListener("click", function() {
 
 
   setTimeout(function() {
-    // console.log(City);
+    console.log(City);
  
     weathername();
     humadityf();
