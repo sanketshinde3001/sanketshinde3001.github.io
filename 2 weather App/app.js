@@ -1,5 +1,5 @@
 const BASE_URL="http://api.openweathermap.org/data/2.5/weather?units=metric"
-const API_KEY="bc0f71b2bb6577b59a020339cf83caef"
+const API_KEY="ffcba85a4834b8638b3b1faabe118986"
 // const City = "mumbai"
 var City;
 var data = "";
