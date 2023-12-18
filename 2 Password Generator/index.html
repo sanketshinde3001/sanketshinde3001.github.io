@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    
+</head>
+<body>
+    <div id="container">
+        <div id="main">
+            <div id="heading">
+                <h1>Password Generator</h1>
+            </div>
+            <div id="onemain">
+                <div id="one">
+                    <input type="text" placeholder="Generated Password" id="final">  
+                </div>
+                    <button type="button" onclick="generatepassword()"><img src="reload.svg" alt="reload"></button>
+                    <button type="button" onclick="copyp()"><img src="copy.svg" alt="copy"></button>
+            </div>  
+            <div id="twomain">
+                <div id="twoone">
+                    <img src="weak.jpg" alt="weak Password" id="photo">
+                </div>
+                <div id="twotwo">
+                <div id="twotwo1">
+                    <select name="Passtype" id="Passtype" onchange="pinmode()">
+                        <option value="Password">Password</option>
+                        <option value="Pin">Pin</option>
+                    </select>
+                </div>
+                <h2 id="pass">Password Length - 8</h2>
+                <div id="twotwo2">
+                    <button type="button" onclick="decrementSlider();generatepassword()">-</button>
+                    <input type="range" id="volume" name="volume" min="1" max="50" value="8" step="1" oninput="updateSliderValue();generatepassword()" />
+                    <button type="button" onclick="incrementSlider();generatepassword()">+</button>
+                </div>
+   
+                </div>
+                <div id="twothree">
+                    <div class="choose">
+                        <input type="checkbox" onclick="generatepassword()" id="Uppercase" name="uppercaseChars" checked />
+                        <label for="Uppercase">Uppercase</label>
+                    </div>
+
+                    <div class="choose">                    
+                        <input type="checkbox" onclick="generatepassword()" id="Lowercase" name="lowercaseChars" />
+                        <label for="Lowercase">Lowercase</label>
+                    </div>
+
+                    <div class="choose">
+                    <input type="checkbox" onclick="generatepassword()" id="Symbols" name="symbolChars" />
+                    <label for="Symbols">Symbols</label>
+                    </div>
+
+                    <div class="choose">
+                        <input type="checkbox" onclick="generatepassword()" id="Numbers" name="numberChars" />
+                        <label for="Numbers">Numbers</label>
+                    </div>
+
+
+
+                </div>
+            </div>  
+        </div>
+    </div>
+</body>
+</html>
