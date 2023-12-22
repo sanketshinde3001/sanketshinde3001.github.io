@@ -32,10 +32,14 @@ async function generateqr(){
         imgqr.src = "https://api.qrserver.com/v1/create-qr-code/?data="+data.value+"&size="+size.value+"x"+size.value+"&margin="+margin1.value+"&color="+color+"&bgcolor="+bcolor+"&format="+ftype;
         imgdw.hidden = false;
         qroutputbox.classList.add("show-img");    
+
+        setTimeout(()=>{
         const image = await fetch(imgqr.src)
         const imageBlog = await image.blob()
         const imageURL = URL.createObjectURL(imageBlog)
         imgdw.href=imageURL;
+        },1000)
+
     }
     else{
         qrdata.classList.add('error');
