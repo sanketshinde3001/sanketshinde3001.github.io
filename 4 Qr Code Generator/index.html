@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qr Code Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="container">
+        <div id="main">
+            <div id="heading"><h1>Qr Code Generator</h1></div>
+
+            <div id="onemain">
+                <input type="text" name="inputdata" id="qrdata" placeholder="ENTER HERE">
+                <button type="button" id="butsub" onclick="generateqr()">></button>
+            </div>
+
+            <div class="twomain">
+                <label for="qrsize">Size - </label><input type="range" id="qrsize" name="qrsize" min="100" max="1000" oninput="updateSliderValue()" value="150" step="10"/><label for="qrsize" id="sizeupdate">150 px</label>
+            </div>
+            <div class="twomain">
+                <label for="Margin">Margin - </label><input type="range" id="Margin" name="Margin" min="0" max="50" oninput="updatemarginValue()" value="5" step="1"/><label for="qrsize" id="marginupdate">5 px</label>               
+            </div>
+            <div class="twomain">
+                <label for="qrcolor">Qr Color - </label><input type="color" id="qrcolor" name="qrcolor" value="#000000">               
+            </div>
+            <div class="twomain">
+                <label for="bgcolor">BG Color - </label><input type="color" id="bgcolor" name="bgcolor" value="#ffffff">              
+            </div>
+            <div class="twomain">
+                <label for="type">File Type - </label><select name="type" id="type">
+                    <Option value="png">png</Option>
+                    <Option value="gif">gif</Option>
+                    <Option value="jpeg">jpeg</Option>
+                    <Option value="hpg">jpg</Option>
+                    <Option value="svg">svg</Option>
+                    <Option value="eps">eps</Option>
+                </select>              
+            </div> 
+      
+            <div id="qroutputbox">
+                <img src="" id="qroutput">
+
+            </div>
+            <div id="dw">
+                <a href="" id="dwbut" hidden download="MyQR"><input type="button" id="butsub1" value="Download"></a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
