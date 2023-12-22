@@ -29,7 +29,7 @@ async function generateqr(){
         var color = document.getElementById("qrcolor").value.slice(1);
         var bcolor = document.getElementById("bgcolor").value.slice(1);
         var ftype = document.getElementById("type").value;
-        imgqr.src = "http://api.qrserver.com/v1/create-qr-code/?data="+data.value+"&size="+size.value+"x"+size.value+"&margin="+margin1.value+"&color="+color+"&bgcolor="+bcolor+"&format="+ftype;
+        imgqr.src = "https://api.qrserver.com/v1/create-qr-code/?data="+data.value+"&size="+size.value+"x"+size.value+"&margin="+margin1.value+"&color="+color+"&bgcolor="+bcolor+"&format="+ftype;
         imgdw.hidden = false;
         qroutputbox.classList.add("show-img");    
         const image = await fetch(imgqr.src)
