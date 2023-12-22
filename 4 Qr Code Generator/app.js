@@ -34,7 +34,7 @@ async function generateqr(){
         qroutputbox.classList.add("show-img");    
 
         
-        const image = await fetch(imgqr.src)
+        const image = await fetch(imgqr.src, { mode: 'cors' })
         const imageBlog = await image.blob()
         const imageURL = URL.createObjectURL(imageBlog)
         imgdw.href=imageURL;
