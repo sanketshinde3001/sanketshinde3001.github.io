@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Theme Stopwatch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="stopwatch">
+  <div id="timer">00:00:00</div>
+  <button id="startStopButton" onclick="startStop()"><img src="play.svg" alt="Start"></button>
+  <button id="lapButton" onclick="lap()"><img src="lpa.svg" alt="Lap"></button>
+  <button id="restartButton" onclick="restart()"><img src="restart.svg" alt="restart"></button>
+  <div id="lapList"></div>
+</div>
+
+</body>
+<script src="app.js"></script>
+</html>

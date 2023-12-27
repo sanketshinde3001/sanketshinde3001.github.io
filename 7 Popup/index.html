@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopUp Notification</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="container">
+        <button type="button" class="subbut" onclick="openpopup()">Submit</button>
+        <div class="popup" id="popup">
+            <img src="tick.png" alt="tick">
+            <h3>Thank You!</h3>
+            <p>Your Details has been sucessfully submitted. Thanks!</p>
+            <button type="button" onclick="closepopup()" id="okbut">OK</button>
+        </div>
+    </div>
+    
+</body>
+<script src="app.js"></script>
+</html>
