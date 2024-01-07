@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerse Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="bg-white text-black uppercase tracking-wider md:text-[22px] py-11  max-sm:mx-4 max-sm:py-5" >
+        <div class="container flex items-center mx-auto justify-between md:text-[15px] lg:text-[20px]">
+            <div id="logo" class="flex items-center gap-3 font-medium">
+                <img src="logo.svg" alt="logo" class="h-14 max-sm:h-10">
+                <h2>Sanket Shinde</h2>
+            </div>
+            <!-- Desktop Nav -->
+            <div >
+                <ul class="hidden md:flex flex-row lg:gap-10 md:gap-6 md:text-[15px] lg:text-[20px]">
+                    <li><a href="https://github.com/sanketshinde3001/30days-30js-projects" target="_blank">WEB</a></li>
+                    <li><a href="https://github.com/sanketshinde3001/GenAI-Projects" target="_blank">GEN-AI</a></li>
+                    <li><a href="https://github.com/sanketshinde3001/DSA-CPP-By-Love-Babbar" target="_blank">DSA</a></li>
+                    <li><a href="https://github.com/sanketshinde3001" target="_blank">OPEN-SOURCE</a></li>
+                    <li><a href="#contacts" class="bg-black text-white px-6 py-3 rounded-md" onclick="scrollToFooter()">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Mobile Nav -->
+            
+            <div class="md:hidden " id="menub">
+                <div class="space-y-1 rotate-180" id="navb">
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                </div>
+
+                <ul class="flex flex-col justify-start gap-5 h-screen absolute bg-[#ff725e] items-start left-0 top-0 pt-24 px-4 -translate-x-full transition-all z-10" id="mobilenav">    
+                    <li><a href="https://github.com/sanketshinde3001/30days-30js-projects" target="_blank">WEB</a></li>
+                    <li><a href="https://github.com/sanketshinde3001/GenAI-Projects" target="_blank">GEN-AI</a></li>
+                    <li><a href="https://github.com/sanketshinde3001/DSA-CPP-By-Love-Babbar" target="_blank">DSA</a></li>
+                    <li><a href="https://github.com/sanketshinde3001" target="_blank">OPEN-SOURCE</a></li>
+                    <li><a href="#contacts" onclick="scrollToFooter()">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="flex container flex-col mx-auto bg-[#f4F6F5] rounded-[59px] pt-16 px-10 md:items-center md:px-20 md:pt-[68px] md:flex-row justify-between gap-8 sm:items-center max-sm:items-center sm:gap-2 max-sm:gap-1 max-sm:pt-8 -z-0">
+        <div class="flex flex-col gap-0 lg:w-1/2 md:w-1/2">
+            <div class="uppercase">
+                <span class="lg:text-[80px] font-bold md:text-[50px] sm:text-[50px] max-sm:text-[35px]">let's</span><br>
+                <span class="lg:text-[80px] font-bold md:text-[50px] sm:text-[50px] max-sm:text-[35px]">explore</span><br>
+                <span class="lg:text-[80px] font-bold md:text-[50px] sm:text-[50px] max-sm:text-[35px]">unique</span><br>
+                <span class="lg:text-[80px] font-bold md:text-[50px] sm:text-[50px] max-sm:text-[35px]">Projects.</span><br>
+            </div>
+            <div>
+                <p class="lg:text-[20px] md:text-[15px] max-sm:text-[15px]">All Projects are Hosted on website along with their Source Code !</p>
+            </div>
+            <div>
+                <a href="https://github.com/sanketshinde3001" target="_blank"><input type="button" value="Github" class="bg-[#ff725e] text-white px-6 py-3 rounded-md my-10 md:px-5 md:py-2.5 sm:max-md:mb-0 cursor-pointer"></a>
+            </div>
+        </div>
+        <img src="work.svg" alt="work" class="lg:w-1/2 md:w-1/2 object-cover sm:w-10/12 max-sm:w-3/4">
+        
+    </section>
+
+    <section class="flex container bg-[#f4F6F5] mx-auto items-center justify-evenly sm:my-5 sm:py-5 max-sm:py-4 max-sm:my-2 rounded-md relative">
+        <img src="html.svg" alt="html" class="w-1/12 lg:w-[80px] md:w-[60px] sm:w-[50px] " onmouseover="showCard('Info About HTML')" onmouseout="hideCard()">
+        <div class="fixed hidden bg-slate-200 p-5 w-52 shadow-md rounded z-10" id="infoCard" >
+            <p id="info">ABOUT HTML</p>
+        </div>
+        <img src="css.svg" alt="css" class="w-1/12 lg:w-[80px] md:w-[60px] sm:w-[50px]" onmouseover="showCard('Info About CSS')" onmouseout="hideCard()">
+
+        <img src="js.svg" alt="js" class="w-1/12 lg:w-[80px] md:w-[60px] sm:w-[50px]" onmouseover="showCard('Info About JavaScript')" onmouseout="hideCard()">
+        <img src="tailwind.svg" alt="tailwind" class="w-1/12 lg:w-[80px] md:w-[60px] sm:w-[50px]" onmouseover="showCard('Info About Tailwind')" onmouseout="hideCard()">
+        <img src="python.svg" alt="python" class="w-1/12 lg:w-[80px] md:w-[60px] sm:w-[50px]" onmouseover="showCard('Info About Python')" onmouseout="hideCard()">
+        <img src="cpp.svg" alt="cpp" class="w-1/12 lg:w-[80px] md:w-[60px] sm:w-[50px]" onmouseover="showCard('Info About CPP')" onmouseout="hideCard()">
+        <img src="ai.svg" alt="ai" class="w-1/12 lg:w-[80px] md:w-[60px] sm:w-[50px]" onmouseover="showCard('Info About AI')" onmouseout="hideCard()">
+
+    </section>
+
+    <section class="flex flex-col items-center container mx-auto gap-16 px-[10px] mt-6">
+        <div class="relative text-black ">
+            <h2 class="text-4xl font-medium pt-5 pb-1 text-center z-0">
+                DOMAINS
+            </h2>
+        </div>
+        <div class="grid grid-flow-row grid-rows-1 md:grid-flow-col md:grid-cols-3 gap-x-64 mb-7 xl:gap-x-40 lg:gap-x-16 md:gap-x-2"> 
+            <div class="flex flex-col w-full gap-7 sm:gap-3 max-sm:gap-2">
+                <img src="web.jpg" class="w-full h-[500px] object-cover object-[20%] rounded-[30px] md:h-[400px] sm:h-[300px] max-sm:h-[280px]">
+
+
+                <div class="flex flex-row items-center justify-between sm:mb-9 max-sm:mb-7">
+                    <div class="flex flex-col">
+                        <h3 class="text-[25px] font-medium">Web Development</h3>
+                        <a href="#" class="text-[15px]">Explore Now!</a>
+                    </div>
+                    <div>
+                        <img src="arrow.svg">
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex flex-col w-full gap-7 sm:gap-3 max-sm:gap-2">
+                <img src="ai.jpg" class="w-full h-[500px] object-cover object-[20%] rounded-[30px] md:h-[400px] sm:h-[300px] max-sm:h-[280px]">
+                <div class="flex flex-row items-center justify-between sm:mb-9 max-sm:mb-7 ">
+                    <div class="flex flex-col">
+                        <h3 class="text-[25px] font-medium">Generative AI</h3>
+                        <a href="#" class="text-[15px]">Explore Now!</a>
+                    </div>
+                    <div>
+                        <img src="arrow.svg">
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex flex-col w-full gap-7 sm:gap-3 max-sm:gap-2">
+                <img src="open.jpg" class="w-full h-[500px] object-cover object-[20%] rounded-[30px] md:h-[400px] sm:h-[300px] max-sm:h-[280px]">
+                <div class="flex flex-row items-center justify-between sm:mb-9 max-sm:mb-7">
+                    <div class="flex flex-col">
+                        <h3 class="text-[25px] font-medium">Open Source C.</h3>
+                        <a href="#" class="text-[15px]">Explore Now!</a>
+                    </div>
+                    <div>
+                        <img src="arrow.svg">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="flex flex-col items-center py-24 bg-[#ff725e]" id="contacts">
+        <h4 class="text-5xl sm:max-md:text-4xl sm:max-md:leading-normal font-black text-white text-center tracking-[1.7px] mb-7 uppercase leading-relaxed max-sm:text-3xl mx-2" >
+            Find this Intresting ?
+        <br>
+            Want to Connect  ?
+        </h4>
+        <p class="max-sm:text-xl text-center mb-3 sm:max-md:text-2xl md:text-3xl">
+            Type your email down below ...
+        </p>
+        <form class="mt-12">
+            <div class=" bg-white rounded-[10px] flex flex-row items-center">
+                <input type="email" name="mail" placeholder="Type your email here" class="px-4 py-5 rounded-[10px] focus-within:outline-0 md:py-6 md:px-7 ">
+                <button type="submit" class="py-2 px-4 bg-black text-white uppercase md:py-[2px] rounded-lg md:text-[30px] md:px-[20px] mr-2" onclick="submitb(event)">Send</button>
+            </div>
+        </form>
+    </section>
+</body>
+
+<script src="app.js"></script>
+</html>
